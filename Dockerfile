@@ -12,6 +12,6 @@ RUN curl -sLf "https://github.com/kubernetes-sigs/kustomize/releases/download/ku
     && tar xf kustomize.tar.gz \
     && mv kustomize /usr/bin \
     && chmod +x /usr/bin/kustomize \
-    && rm -rf ./*
+    && rm -rf ./kustomize*
 
 CMD ["/usr/bin/kustomize"]
